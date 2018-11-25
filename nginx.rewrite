@@ -1,0 +1,12 @@
+#禁止执行PHP的目录
+location ~ ^/(thinkphp|vendor/phpunit|application|runtime)/.*\.php
+{
+	return 404;
+}
+
+location / {
+	if (!-e $request_filename) {
+		rewrite  ^(.*)$  /index.php?s=$1  last;  
+		break;
+	}
+}

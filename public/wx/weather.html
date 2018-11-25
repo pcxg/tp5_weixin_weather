@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- meta使用viewport以确保页面可自由缩放 -->
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+
+<!-- 引入 jQuery Mobile 样式 -->
+<link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+<!-- 引入 jQuery 库 -->
+<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- 引入 jQuery Mobile 库 -->
+<script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+    <div data-role="page" style="background:#66cccc">
+        <div data-role="header">
+        	<h1>London</h1>
+            <a href="#myPopup" data-rel="popup" class="ui-btn  ui-btn-right ui-icon-bullets ui-btn-icon-notext ui-corner-all" data-transition="pop"></a>
+		<div data-role="popup" id="myPopup">
+			  <p>设置内容</p>
+		</div>
+        </div>
+        <div data-role="content">
+        	<div style="text-align: center;">
+        		<h4>晴天</h4>
+			<h2>17°C</h2>	
+        	</div>
+        	<HR style="border:1" color=#000000 SIZE=1  >
+            <div class="ui-grid-b">
+            	<div class="subtitle">
+            		<h4>气候条件</h4>
+            	</div>
+
+           		<div class="ui-block-a">
+           			<img src="../static/weather_icon/humidity.png">
+					<p>湿度</p>
+					<p>65%</p>
+				</div>
+				<div class="ui-block-b">
+					<img src="../static/weather_icon/pm25.png">
+					<p>PM2.5</p>
+					<p>1000</p>
+				</div>
+				<div class="ui-block-c">
+                  	<img src="../static/weather_icon/cansee.png">
+					<p>能见度</p>
+					<p>10m</p>
+				</div>
+				
+				<HR style="border:1" color=#000000 SIZE=1  >
+				<div class="subtitle">
+            		<h4>日出/日落</h4>
+            	</div>
+
+           		<div class="ui-block-a">
+           			<img src="../static/weather_icon/sunrise.png">
+					<p>日出</p>
+					<p>6:00</p>
+			</div>
+				<div class="ui-block-b">
+					<img src="../static/weather_icon/sun_duration.png">
+					<p>日光照射</p>
+					<p>10:00</p>
+				</div>
+				<div class="ui-block-c">
+                  	<img src="../static/weather_icon/sunset.png">
+					<p>日落</p>
+					<p>16:00</p>
+				</div>
+
+				<HR style="border:1" color=#000000 SIZE=1  >
+				<div class="subtitle">
+            		<h4>风力情况</h4>
+            	</div>
+
+           		<div class="ui-block-a">
+           			<img src="../static/weather_icon/temp.png">
+					<p>寒冷</p>
+					<p>100°C</p>
+			</div>
+				<div class="ui-block-b">
+					<img src="../static/weather_icon/wind_direction.png">
+					<p>风向</p>
+					<p>130°</p>
+				</div>
+				<div class="ui-block-c">
+                  	<img src="../static/weather_icon/wind_speed.png">
+					<p>风速</p>
+					<p>10km/h</p>
+				</div>
+				<HR style="border:1" color=#000000 SIZE=1  >
+			</div>
+           	
+        </div>
+        <div data-role="footer">
+            <h1>页脚</h1>
+        </div>
+    </div>
+</body>
+
+<style>
+.ui-block-a, 
+.ui-block-b, 
+.ui-block-c 
+{
+
+height: 150px;
+text-align: center;
+
+
+}
+.subtitle{
+	text-align: center;
+}
+</style>
+</html>
