@@ -73,7 +73,7 @@ class Index
              {
                  "type":"view",
                  "name":"天气界面",
-                 "url":"http://188.131.154.107/wx/weather.html"
+                 "url":"http://188.131.154.107/wx/loc_wea.php"
               },
               {
                  "type":"click",
